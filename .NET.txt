@@ -1,0 +1,70 @@
+>.NET
+
+-CLR, FCL- Common Language Runtime and Framework Class Library
+	->CLR will the common execution environment for the languages underlying .NET as well as .NET applications
+	manages applications with the memory management of the applications.
+	->FCL provides the functionality for the application with modules and reusable codes, R/W data files. Also
+	it has the BCL(Base Class library).
+
+
+--> Static fields- This are the fields that can be accessed without creating an Instance.
+
+	
+-->.dll files - dynamic link libraries, is used to dynamic load the content in the application. cant be executed
+		directly but can be load by other programs to run the content
+
+-->Struct- Structures/struct keyword is used for the abstraction in the c# that represents a single value. Also used
+		to create value types variables.
+-->Enums- Enumerations/Enums keyword is used for value type variables which holds only specific type of value/ named constants.
+
+--> Pass by value-->Reference types sends copy of the reference.
+		-->Value types sends copy of the value.
+--> ref keyword is used to give the reference of the assigned variable.
+--> out keyword is used to give the reference of the unassigned variable.
+
+
+-->Compile time polymorphism- The methods having different signatures are defined earlier which helps at compile time to call current method.
+--> Run time polymorphism - the resolving of overridden method at runtime. Used in Method Overriding
+-->Delegates- it is used to reference the methods.
+-->Virtual-it is used to make a property, method, indexer to be overridden in the derived class. Override should be mentioned in the derived class method
+-->Interface-The method declared inside it are by default public, also to declare private members in Interface version > 8 required
+
+-->Conditional operators for variables- This are used to assign value to variables out of 2 values. 
+					syntax - 
+					datatype variable_name expression ? value to return if expression is true: value to return if expression is false;
+
+-->goto jumping : Is used to jump to a label.
+			Syntax : 
+			goto label;
+			label:
+			//body
+
+-->Anonymous functions - These are used to Anonymous methods or inline methods without names, also used to build upon delegates. It has two keywords action and func
+				-->Action: It is used to define void functions
+				-->func: It is used to define the functions with return types
+				syntax: 
+				Action function_name() => //body;
+				func<dtype for parameters> function_name = expression
+
+--> Except - return the uncommon elements between two sequence
+|
+-->Intersect - return the common elements of the two sequences
+|
+-->Union - return the unique(removing duplicates if both sequence have) elements of both the sequences
+--> reflection - metadata about the loaded assemblies and the types defined within int
+
+
+MVC:
+
+-->Model-Business Entities, Handles data logic, interacts with database.(Database Interactions)
+-->Views- Represents the data from the Model, Dynamically rendered.(UI)
+-->Controller- Handles the requests from the client, Act as bridge between the model and the view.(Logic and communications b/w MV)
+
+
+--> Middleware- Components or class which are executes on every incoming client requests. Controls the response to the https requests	
+--> Routing- Mapping the incoming request to the correct controller and their action methods
+
+control flow:
+		--->request-->Routing===>middleware===>Controller===>model===>view--->controller--->response to the client
+
+attribute routing- Uses Route attribute to define the routes.
